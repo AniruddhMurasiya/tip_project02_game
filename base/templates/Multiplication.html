@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Adventure</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Simple inline CSS to style the game */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f9ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            background-color: #008CBA;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        label:hover {
+            background-color: #005f73;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #357a38;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <form>
+            <div id="question-container">
+                <h1>Multiplication Wizard</h1>  
+                <h2>If we distribute 2 apples among 4 people, how many apples does each person get?</h2>
+                <img id="question-image" src="images\apple image.jpg" alt="Question Image" />
+            </div>
+            <div id="answers-container">
+                <label>
+                    <input type="radio" name="answer" value="0">
+                    4 apples total because they divide between 4 people
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="1">
+                    8 apples in total because everybody has 2 apples each
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="2">
+                    2 apples in total because a person got 2 apples
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="3">
+                    0 apples in total because they are distributed amongst the people
+                </label>
+            </div>
+            <button type="submit">Submit Answer</button>
+        </form>
+    </div>
+</body>
+</html>
